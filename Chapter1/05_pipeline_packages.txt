@@ -1,0 +1,9 @@
+What not included in a pipeline package that we can load into spaCy? 
+a) A config file describing how to create the pipeline. 
+b) Binary weights to make statistical predictions. 
+c) The labelled data that the pipeline was trained on. 
+d) Strings of the pipeline's vocabulary and their hashes. 
+
+The answer is (c) the labelled data that the pipeline was trained on. 
+Trained pipelines allow us to generalize based on a set of training examples. 
+Once they are trained, they use binary weights to make predictions. That's why it's not necessary to ship them with their training data.  
